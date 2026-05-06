@@ -96,7 +96,7 @@ document.getElementById("submitBtn").onclick = async function () {
   resultBox.textContent = "Loading...";
 
   try {
-    const response = await fetch("API_URL/predict", {
+    const response = await fetch("https://backend-1-8d50.onrender.com/predict", {
       method: "POST",
       body: formData
     });
